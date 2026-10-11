@@ -1,0 +1,1 @@
+Fixed a bug where ``jackknife_resampling`` and ``jackknife_stats`` silently stripped the mask from ``numpy.ma.MaskedArray`` or ``astropy.utils.masked.Masked`` inputs, causing masked values to leak into the resampled slices and producing incorrect estimates and standard errors.
