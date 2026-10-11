@@ -87,4 +87,3 @@ def test_jackknife_masked_all_masked_raises():
         jackknife_resampling(data)
     with pytest.raises(ValueError, match="data must contain at least one measurement"):
         jackknife_stats(data, np.mean)
-
